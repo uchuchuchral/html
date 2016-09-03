@@ -1,0 +1,143 @@
+<html>
+<head>
+	<title>
+		Layout webPage
+	</title>
+	<meta charset="UTF-8">
+
+	<style type="text/css">
+     
+     html {
+          font-family: Arial, Helvetica, sans-serif ; color: #333; /* хэд хэдэн font уудыг таслалаар тусгаарлаж бичнэ*/
+     }
+
+     body{
+        background: #ccc;
+        margin: 0;
+    } 
+
+     #container{
+     	width: 100%;
+     	margin: 0 auto; 
+     	background: #fff;
+     } 
+     #header{
+     	width: 100%;
+     	height: 60px;
+     	border-bottom: 1px solid #c7c7c7;
+     	background: #333; 
+     }
+
+     #logo{
+     	float: left;
+     	width: 40px;
+     	height: 40px;
+        margin: 10px;
+        background: #ccc;
+     }
+    
+     #top_info{
+     	float: right;
+     	width: 100px;
+     	height: 40px;
+     	background: #666;
+     	border: 1px solid #c7c7c7;
+     	margin: 10px;
+
+     }
+
+     #navbar{
+     	height: 20px;
+     	clear: both;
+     }
+
+     #navbar ul{  /* navbar доторх ul таг ийн style ийг ингэж бичнэ */
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+     }
+
+     #navbar ul li{
+     	       float: left;
+     	       padding: 10px;
+     }
+
+     #navbar ul li a{
+     	    font-size: 12px;
+     	    float: left;
+     	    display: block;
+     	    padding: 0 0 0 20px;
+     }
+     
+     #banner{
+             background: #666;
+             height: 120px;
+             clear: both;
+     }
+
+
+     #left_col{
+     	 
+           float: left;
+           width: 45%;
+           height: 300px;
+           border: 1px solid #333;
+           color: #fff;
+           background: #000;
+           padding: 20px;
+     }
+
+     #right_col{
+          float: right;
+           width: 45%;
+           height: 300px;
+           border: 1px solid #333;
+           color: #fff;
+           background: #000;
+           padding: 20px;
+      }
+      
+      #footer{
+            padding: 20px;
+            clear: both;
+      }
+
+	</style>
+</head>
+
+
+
+<!-- Body хэсэг-->
+<body>
+    <!--Container агуулагч хэсэг -->
+	<div id="container">
+	   <!-- header толгой хэсэг-->
+	    <div id="header">
+		     <div id="logo">Logo</div>
+		     <div id="top_info">Top Info</div>
+		     <div id="navbar">
+		     	<ul>
+		     		<li > <a href="URL"> Home button </a></li>
+		     		<li > <a href="URL"> Home button </a></li>
+		     		<li > <a href="URL"> Home button </a></li>
+		     		<li > <a href="URL"> Home button </a></li>
+		     	</ul>
+
+		     </div>
+	    </div>
+       <!--Content area -->
+        <div id="content_area">
+             <div id="banner">Banner</div>  	
+             <div id="left_col">Left col content</div>
+ 			 <div id="right_col">Right col content</div>
+        </div>
+        
+        <!--footer-->
+        <div id="footer">Footer</div>
+
+	</div> <!--container төгсгөл-->
+
+
+</body>
+
+</html>

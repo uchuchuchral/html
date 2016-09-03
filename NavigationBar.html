@@ -1,0 +1,222 @@
+<html>
+<head>
+
+	<title>Navigation</title>
+	<meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+	<style type="text/css">
+       
+html{
+     font-family: courier,serif, arial;
+     color: white;
+ }
+
+    .container{
+    
+    width:100%;
+    margin: 0 auto;
+    background: white; 
+}
+
+#header{
+	  width: 100%;
+    height: 48px;
+    background: #212121;
+    border: 1px solid white;
+}
+
+    #header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #212121;
+      position: fixed; 
+
+}
+
+#header li {
+
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+
+
+#header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: courier, arial;
+}
+
+#header li a:hover:not(.active) {
+    background-color: #9E9E9E;
+}
+
+.active {
+    background-color: #9E9E9E;
+}
+
+
+.button {
+	  float: right;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 740px;
+
+}
+
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+#content_area{
+   width: 100%;
+   /*border: 1px solid red;*/
+   height: 1300px;
+}
+
+#section1{
+  width: 100%;
+  height: 45%;
+  margin-top: 20px;
+  /*border: 1px solid blue; */
+  background-image: url("backyard.jpg");
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+  
+}
+
+
+#section2{
+   width: 100%;
+  height: 45%;
+  margin-top: 20px;
+ /* border: 1px solid blue;*/
+  background: #212121;
+
+}
+
+.backyard{
+     float: left;
+     width: 20%;
+     margin:20px;
+     padding: 5px;
+     border: 1px solid white;
+     height: 450px;
+}
+
+.img1
+{
+   width: 225px;
+   height: 225px;
+   opacity: 0.5;  /* зурган дээр курсор очихоос нааш тод байдал 50хувьтай байна  */
+}
+.img1:hover{
+   opacity: 1.0;
+}
+
+#footer{
+   margin-top: 20px;
+/*   border: 1px solid blue;*/
+  background: #212121;
+   width: 100%;
+   text-align: center;
+   height: 5%;
+}
+	</style>
+
+
+
+
+</head>
+
+     
+<body>
+<div class="container">
+   <div id="header">
+
+      <ul>
+   	     <li><a class="active" href="#home">Нүүр хуудас</a></li>
+   	     <li><a  href="#home">Мэдээ</a></li>
+   	     <li><a  href="#home">Гишүүд</a></li>
+   	     <li><a  href="#home">Backyard show </a></li>
+   	     <button class="button button5">Дуу сонсох</button>
+      </ul>
+      
+    </div>
+     <!--Content area -->
+        <div id="content_area">
+             <div id="section1"></div>    
+             <div id="section2">
+                 
+                  <div id="Desant" class="backyard">
+                       <img src="Desant.jpg" class="img1">
+
+                       <h1> Desant </h1>
+                       <p> Сэтгэлд сэвэлзэх салхи чи хаашаа <br>
+                            Үүнийг би шийднэ бусад зүйлс цаашаа</p>
+                    </div>
+
+                  <div id="Jacool" class="backyard">
+                       <img src="Jacool.jpg" class="img1">
+                        <h1>Jacool MVP</h1>
+                        <p> Тэндээс мацаж гарсан зорилго чиний чихэнд.. <br>
+                        </p>  
+                  </div>
+
+                  <div id="Ratabuzz" class="backyard" >
+                       <img src="Ratabuzz.jpg" 
+                       class="img1">
+                       <h1>Ratabuzz</h1>
+                       <p> Айдсаа ардаа хий <br>
+                           Айвал айдаг л юм
+                           </p>
+                  </div>
+
+                  <div id="Thunder" class="backyard">
+                       <img src="Thunder.jpg" class="img1">
+                       <h1> Thunder</h1>
+                       <p> Намайг номер 1 биш гэж өдөр болгон сануул ! <br>
+                       </p> 
+                       </div>
+             </div>
+               
+              <!--footer-->
+        <div id="footer">Жинхэнэ зүйлээ хадгалж үлдэцгээ . <br>
+              This is Backyard.
+            </div>
+
+          </div>
+        
+        
+
+
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+	<meta charset="UTF-8">
+
+	<style type="text/css">
+
+     div.container{
+     	width: 100%;
+     	background-color: grey;
+     	border: 2px solid black;
+     }
+
+     header, footer {  /* ene 2 huh hureetei baig*/
+         width: 100%;
+         height: 60px;
+         text-align: center;
+         color: pink;
+      /*   border: 2px solid blue;*/ 
+         background: #333;
+         margin-top: 20px;
+         clear: both;
+     } 
+   
+
+  nav {  /* nav ulaan hureetei baig */
+      margin-top: 20px;
+      float: left;
+   /* width: 250px;
+    height: 170px;
+    */
+      width: 20%;
+      height: 60%;
+      padding: 20px;
+      border: 1px solid pink;
+      background-color: #333;
+}
+
+nav ul {
+      list-style-type: none;
+      padding: 0;
+}
+   
+nav ul a {
+	color: white;
+	font-size: 18px;
+    text-decoration: none;
+    padding: 0 0 0 20px;
+}
+
+    section {
+
+    }
+    
+
+    article {  /* article shar hureetei baig*/ 
+    width: 70%;
+    border:1px solid pink;
+    background-color: linen;
+    color: gray; 
+    float: right;
+    padding: 20px;
+    /*	
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    background-color: linen;*/
+    overflow: hidden;
+    height: 60%;
+    margin-top: 20px;
+
+}
+  
+
+    #right{ /* right bolhoor bor ungutui baig */
+      display: block;  
+      width: 35%;
+      float: right;
+    /*  border: 1px solid #795548;*/
+      background-image: url("mic2.png");
+       background-repeat: no-repeat;
+       background-position: center;
+       height: 90%;
+    }
+
+    #left{
+        width: 60%;
+      
+        float: left;
+    
+        
+    }
+
+
+    aside{
+
+    }
+
+
+	</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<header> 
+	<h1> Дуу хөгжим</h1>
+</header>
+<nav>
+	<ul>
+    <li><a href="#">Хип хоп</a></li>
+    <li><a href="#">Поп</a></li>
+    <li><a href="#">бусад</a></li>
+  </ul>
+</nav>
+
+<section>
+	
+</section>
+
+<article>
+    <div id="left">
+	<h1>
+		Хип хоп
+	</h1>
+	<p>
+
+London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+
+Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.
+</p>
+</div>
+<div id="right">
+
+</div>
+
+
+</article>
+<aside>
+	
+</aside>
+<footer>
+	<h3>Амьдралын хэв маяг</h3>
+</footer>
+
+</div>
+
+</body>
+</html>
